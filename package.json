@@ -1,0 +1,11 @@
+{
+    "name": "lightning-nodejs-containers",
+    "version": "0.0.1",
+    "description": "An Overview of NodeJS as a lightweight container - A session I gave to Technical Leaders @LivePerson",
+    "private": true,
+    "author": "Itai Koren (@itkoren)",
+    "license": "MIT",
+    "engines": {
+        "node": ">= 0.10.x"
+    }
+}
