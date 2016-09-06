@@ -63,6 +63,7 @@ A [session](http://itkoren.github.io/lightning-nodejs-containers/) I gave to Tec
  - Run Sample:
 
        ```
+       npm install
        npm start
        ```
  - Look at routes/index.js, services/message-service.js
@@ -76,6 +77,7 @@ A [session](http://itkoren.github.io/lightning-nodejs-containers/) I gave to Tec
  - Run Sample:
 
        ```
+       npm install
        npm start
        ```
  - Look at package.json, bin/www
