@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  script(src='/javascripts/index.js')
+  h1= title
+  p Welcome to #{title}
+  div(id='mode')
+  hr
+  br
+  div(id='chatbox')
+  br
+  hr
+  form(id='message-form')
+    input(type='text', id='chat-message')
+    input(type='submit', value='Send')
