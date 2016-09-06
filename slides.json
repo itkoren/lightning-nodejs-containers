@@ -1,6 +1,21 @@
 [{
     "steps": [
         [{
+            "name": "img",
+            "attributes": {
+                "src": "https://cloud.githubusercontent.com/assets/3624786/18290013/6e0c91bc-748a-11e6-9be0-17c7e3dfbb52.jpg",
+                "class": "absolute-element",
+                "style": "position: absolute; max-height: none; max-width: none; width: 587px; height: 294px; z-index: 4; left: 310px; top: 327px;"
+            }
+        }, {
+            "name": "h2",
+            "attributes": {
+                "class": "absolute-element",
+                "style": "position: absolute; width: 843px; height: 95px; z-index: 4; left: 118px; top: 214px;"
+            },
+            "value": "Light(ning) NodeJS Containers"
+        }],
+        [{
             "name": "p",
             "value": [{
                 "name": "img",
@@ -67,13 +82,6 @@
                         "data-fragment-index": "5"
                     },
                     "value": "Inspired by Ruby's Mongrel Web Server"
-                }, {
-                    "name": "li",
-                    "attributes": {
-                        "class": "fragment",
-                        "data-fragment-index": "6"
-                    },
-                    "value": "Quite young, but very popular. <a href=\"https://github.com/search?o=desc&amp;q=stars%3A%3E1&amp;s=stars&amp;type=Repositories\" target=\"_blank\">see</a>"
                 }]
             }]
         }, {
@@ -109,7 +117,7 @@
                 "class": "fragment",
                 "data-fragment-index": "0",
                 "src": "https://cloud.githubusercontent.com/assets/3624786/18091521/9c07d7f2-6ed1-11e6-9c5e-9dd3a4e3e65a.png",
-                "style": "width: 959px; height: 596px; max-height: none; max-width: none;"
+                "style": "width: 1020px; height: 596px; max-height: none; max-width: none; background-color: white;"
             }
         }, {
             "name": "notes",
@@ -119,6 +127,21 @@
                 "If an item requires an I/O the event loop delegates the operation to the thread pool",
                 "Once the I/O operation is complete, the callback is queued for processing"
             ]
+        }],
+        [{
+            "name": "h2",
+            "value": "Never Block!!!"
+        }, {
+            "name": "img",
+            "attributes": {
+                "class": "fragment",
+                "data-fragment-index": "0",
+                "src": "https://cloud.githubusercontent.com/assets/3624786/18290014/6e0d8144-748a-11e6-9fd2-4a8e8ab9632f.jpeg",
+                "style": "width: 600px; height: 396px; max-height: none; max-width: none; background-color: white;"
+            }
+        }, {
+            "name": "notes",
+            "value": []
         }],
         [{
             "name": "h2",
@@ -550,14 +573,14 @@
             "name": "pre",
             "attributes": {
                 "class": "absolute-element",
-                "style": "position: absolute; width: 1160px; height: 27px; z-index: 4; left: -100px; top: 563px; max-height: none; max-width: none;"
+                "style": "position: absolute; width: 460px; height: 27px; z-index: 4; left: 0px; top: 563px; max-height: none; max-width: none;"
             },
             "value": [{
-                "name": "code",
+                "name": "p",
                 "attributes": {
-                    "style": "width: 1160px; position: absolute; top: 0; left: 0px;"
+                    "style": "width: 460px; position: absolute; top: 0; left: 0px;"
                 },
-                "value": "git clone https://github.com/itkoren/lightning-nodejs-containers.git lnc && cd lnc && git checkout step1"
+                "value": "Let's Node - <a href=\"https://github.com/itkoren/lightning-nodejs-containers\">https://github.com/itkoren/lightning-nodejs-containers</a>"
             }]
         }, {
             "name": "img",
@@ -566,6 +589,14 @@
                 "class": "absolute-element",
                 "style": "position: absolute; max-height: none; max-width: none; width: 415px; height: 556px; z-index: 4; left: 240px; top: -10px;"
             }
+        }],
+        [{
+            "name": "h2",
+            "attributes": {
+                "class": "absolute-element",
+                "style": "position: absolute; width: 873px; height: 145px; z-index: 4; left: 49px; top: 244px; max-height: none; max-width: none;"
+            },
+            "value": "THE END - Thanks"
         }]
     ]
 }]
