@@ -42,6 +42,7 @@ A [session](http://itkoren.github.io/lightning-nodejs-containers/) I gave to Tec
       ```
       npm start
       ```
+ - Look at package.json, app.js, services/message-service.js
 
 ## Step 2
  - Open Terminal/Command Prompt and type
