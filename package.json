@@ -1,5 +1,5 @@
 {
-    "name": "lightning-nodejs-containers",
+    "name": "step1",
     "version": "0.0.1",
     "description": "An Overview of NodeJS as a lightweight container - A session I gave to Technical Leaders @LivePerson",
     "private": true,
