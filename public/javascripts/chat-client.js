@@ -1,13 +1,26 @@
 function ChatClient(options) {
     options = options || {};
 
-    var transport = ChatClient.Polling;
+    var transport;
+    var mode;
 
-    //this.mode = instanceof transport;
+    if (window.WebSocket && false !== options.ws) {
+        mode = ChatClient.MODES.WebSocket;
+    }
+    else {
+        mode = ChatClient.MODES.Polling;
+    }
+
+    transport = ChatClient[mode];
+
+    if ('function' === typeof transport.setup) {
+        transport.setup.call(this);
+    }
+
     this.subscribe = transport.subscribe;
     this.publish = transport.publish;
     this.startId = options.startId;
-    this.mode = 'Polling';
+    this.mode = mode;
 }
 
 function getStartId(data) {
@@ -84,6 +97,11 @@ function polling(options, callback) {
     xhr.send();
 }
 
+ChatClient.MODES = {
+    WebSocket: 'WebSocket',
+    Polling: 'Polling'
+};
+
 ChatClient.Polling = {
     subscribe: function (callback) {
         polling({
@@ -116,5 +134,29 @@ ChatClient.Polling = {
             }
         };
         xhr.send(params);
+    }
+};
+
+ChatClient.WebSocket = {
+    setup: function () {
+        this.socket = new WebSocket('ws://localhost:3000');
+
+        this.socket.onopen = function (event) {
+            this.socket.send(JSON.stringify({
+                getAll: {
+                    startId: this.startId,
+                    include: true,
+                    isStartDate: true
+                }
+            }));
+        }.bind(this);
+    },
+    subscribe: function (callback) {
+        this.socket.onmessage = function (event) {
+            callback(null, JSON.parse(event.data));
+        };
+    },
+    publish: function (data) {
+        this.socket.send(JSON.stringify(data));
     }
 };
