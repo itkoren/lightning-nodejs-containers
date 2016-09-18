@@ -103,12 +103,10 @@ A [session](http://itkoren.github.io/lightning-nodejs-containers/) I gave to Tec
 
        service_status.init(cfg);
 
-       module.exports = (function() {
-           return {
-               messages: service_status.metrics.addMetric({ name: 'Messages', type: 'Counter' });
-               rps: service_status.metrics.addMetric({ name: 'RPS', type: 'Meter' });
-           };
-       })();
+       module.exports = {
+           messages: service_status.metrics.addMetric({ name: 'Messages', type: 'Counter' });
+           rps: service_status.metrics.addMetric({ name: 'RPS', type: 'Meter' });
+       };
        ```
  - Open services/message-service.js and add:
 
