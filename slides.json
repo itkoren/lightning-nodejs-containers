@@ -5,7 +5,14 @@
             "attributes": {
                 "src": "https://cloud.githubusercontent.com/assets/3624786/18290013/6e0c91bc-748a-11e6-9be0-17c7e3dfbb52.jpg",
                 "class": "absolute-element",
-                "style": "position: absolute; max-height: none; max-width: none; width: 587px; height: 294px; z-index: 4; left: 310px; top: 327px;"
+                "style": "position: absolute; max-height: none; max-width: none; width: 367px; height: 184px; z-index: 4; left: 640px; top: 267px;"
+            }
+        }, {
+            "name": "img",
+            "attributes": {
+                "src": "https://cloud.githubusercontent.com/assets/3624786/18630357/bd28ca1a-7e74-11e6-84c3-1665fc9999bc.jpg",
+                "class": "absolute-element",
+                "style": "position: absolute; max-height: none; max-width: none; width: 367px; height: 184px; z-index: 4; left: 70px; top: 1px;"
             }
         }, {
             "name": "h2",
