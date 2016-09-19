@@ -322,7 +322,7 @@
                         "class": "fragment",
                         "data-fragment-index": "4"
                     },
-                    "value": "Typesafe & Garbage collected"
+                    "value": "Garbage collected"
                 }, {
                     "name": "li",
                     "attributes": {
@@ -345,7 +345,7 @@
         }],
         [{
             "name": "p",
-            "value": "Functions - as first-class objects"
+            "value": "Functions - as first-class members (objects)"
         }],
         [{
             "name": "div",
