@@ -95,17 +95,24 @@ A [session](http://itkoren.github.io/lightning-nodejs-containers/) I gave to Tec
        ```
        var service_status = require('lp_js_service_status');
        var pkg = require('../package.json');
+       var logger = {
+         log: console.log,
+         info: console.log,
+         debug: console.log,
+         warn: console.log,
+         error: console.log
+       };
        var cfg = {
-          port: 4888,
-          logger: console,
-          pckJson: pkg
+         port: 4888,
+         logger: logger,
+         pckJson: pkg
        };
 
        service_status.init(cfg);
 
        module.exports = {
-          messages: service_status.metrics.addMetric({ name: 'Messages', type: 'Counter' });
-          rps: service_status.metrics.addMetric({ name: 'RPS', type: 'Meter' });
+         messages: service_status.metrics.addMetric({ name: 'Messages', type: 'Counter' }),
+         rps: service_status.metrics.addMetric({ name: 'RPS', type: 'Meter' })
        };
        ```
  - Open services/message-service.js and add:
