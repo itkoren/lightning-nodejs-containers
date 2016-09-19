@@ -580,12 +580,12 @@
             "name": "pre",
             "attributes": {
                 "class": "absolute-element",
-                "style": "position: absolute; width: 460px; height: 27px; z-index: 4; left: 0px; top: 563px; max-height: none; max-width: none;"
+                "style": "position: absolute; width: 760px; height: 27px; z-index: 4; left: 0px; top: 563px; max-height: none; max-width: none;"
             },
             "value": [{
                 "name": "p",
                 "attributes": {
-                    "style": "width: 460px; position: absolute; top: 0; left: 0px;"
+                    "style": "width: 760px; position: absolute; top: 0; left: 0px; padding-left: 4px; padding-right: 4px;"
                 },
                 "value": "Let's Node - <a href=\"https://github.com/itkoren/lightning-nodejs-containers\">https://github.com/itkoren/lightning-nodejs-containers</a>"
             }]
